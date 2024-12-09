@@ -1,0 +1,1 @@
+python -m unittest test_wind_turbine.py
