@@ -20,4 +20,8 @@ def calculate_power_output(Vw, ww_pu):
     
     Pmw_pu = kp * Cp_pu * Vw_pu**3
     
+    # Return 0 if Pmw_pu is less than zero
+    if Pmw_pu < 0:
+        return 0
+    
     return Pmw_pu
